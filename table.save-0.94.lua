@@ -146,6 +146,7 @@ end
 
 --// The Load Function
 function table.load( sfile )
+	local tables, err, _
 	-- catch marker for stringtable
 	if string.sub( sfile,-3,-1 ) == "--|" then
 		tables,err = loadstring( sfile )
